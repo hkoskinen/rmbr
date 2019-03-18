@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -11,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "helmet": "^3.16.0"
+    "helmet": "^3.16.0",
+    "joi": "^14.3.1",
+    "mongoose": "^5.4.19"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"

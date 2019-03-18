@@ -12,4 +12,19 @@ router.get("/:id", (req, res) => {
   res.json({ message: `get note by id: ${id}`, id });
 });
 
+// POST /api/notes
+router.post("/", (req, res) => {
+  res.json({ message: "Add note" });
+});
+
+// PUT /api/notes/:id
+router.put("/:id", (req, res) => {
+  res.json({ message: "Update note" });
+});
+
+// DELETE /api/notes/:id
+router.delete("/:id", (req, res) => {
+  res.json({ message: "Delete note" });
+});
+
 module.exports = router;
